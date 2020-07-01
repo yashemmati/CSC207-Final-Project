@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.CalendarGui">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="10" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1103" height="924"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <toolbar id="8724c" binding="tbarOptions">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="9" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="11cf6" class="javax.swing.JButton" binding="btnCreateEvent">
+            <constraints/>
+            <properties>
+              <maximumSize width="110" height="30"/>
+              <minimumSize width="110" height="30"/>
+              <text value="Create Event"/>
+            </properties>
+          </component>
+          <component id="c195a" class="javax.swing.JButton" binding="btnFindEvent">
+            <constraints/>
+            <properties>
+              <maximumSize width="110" height="30"/>
+              <minimumSize width="110" height="30"/>
+              <text value="Find Event"/>
+            </properties>
+          </component>
+          <component id="f7541" class="javax.swing.JButton" binding="btnCreateSeries">
+            <constraints/>
+            <properties>
+              <maximumSize width="110" height="30"/>
+              <minimumSize width="110" height="30"/>
+              <text value="Create Series"/>
+            </properties>
+          </component>
+          <component id="277df" class="javax.swing.JButton" binding="btnViewSeries">
+            <constraints/>
+            <properties>
+              <maximumSize width="110" height="30"/>
+              <minimumSize width="110" height="30"/>
+              <text value="View Series"/>
+            </properties>
+          </component>
+          <component id="6e896" class="javax.swing.JButton" binding="btnChangeCalendar">
+            <constraints/>
+            <properties>
+              <maximumSize width="110" height="30"/>
+              <minimumSize width="110" height="30"/>
+              <text value="Change Calendar"/>
+            </properties>
+          </component>
+          <component id="317b2" class="javax.swing.JButton" binding="btnLogOut">
+            <constraints/>
+            <properties>
+              <maximumSize width="110" height="30"/>
+              <minimumSize width="110" height="30"/>
+              <text value="Log Out"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <component id="fa861" class="javax.swing.JLabel" binding="lblSunday">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="130" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Sunday"/>
+        </properties>
+      </component>
+      <component id="9da56" class="javax.swing.JLabel" binding="lblMonday">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="130" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Monday"/>
+        </properties>
+      </component>
+      <component id="fa0bf" class="javax.swing.JLabel" binding="lblTuesday">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="130" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Tuesday"/>
+        </properties>
+      </component>
+      <component id="475e9" class="javax.swing.JLabel" binding="lblWednesday">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="130" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Wednesday"/>
+        </properties>
+      </component>
+      <component id="15d0e" class="javax.swing.JLabel" binding="lblThursday">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="130" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Thursday"/>
+        </properties>
+      </component>
+      <component id="cba52" class="javax.swing.JLabel" binding="lblFriday">
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="130" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Friday"/>
+        </properties>
+      </component>
+      <component id="1f0ba" class="javax.swing.JLabel" binding="lblSaturday">
+        <constraints>
+          <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="130" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Saturday"/>
+        </properties>
+      </component>
+      <component id="c83b1" class="GUI.JDateTextPane" binding="tpSunday1">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="bc678" class="GUI.JDateTextPane" binding="tpSunday2">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="6841a" class="GUI.JDateTextPane" binding="tpSunday3">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="486b1" class="GUI.JDateTextPane" binding="tpSunday4">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="8ca56" class="GUI.JDateTextPane" binding="tpSunday5">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <vspacer id="1f0ca">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="10"/>
+            <preferred-size width="-1" height="10"/>
+            <maximum-size width="-1" height="10"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="fea47" class="GUI.JDateTextPane" binding="tpMonday1">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="4" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="4bf62" class="GUI.JDateTextPane" binding="tpMonday2">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="af03" class="GUI.JDateTextPane" binding="tpMonday3">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="81a85" class="GUI.JDateTextPane" binding="tpMonday4">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="8cdd2" class="GUI.JDateTextPane" binding="tpTuesday1">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="3614c" class="GUI.JDateTextPane" binding="tpTuesday2">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="a2afc" class="GUI.JDateTextPane" binding="tpTuesday3">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="eaf73" class="GUI.JDateTextPane" binding="tpTuesday4">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <text value=""/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="f84e2" class="GUI.JDateTextPane" binding="tpTuesday5">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="a4660" class="GUI.JDateTextPane" binding="tpWednesday1">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="b7ad1" class="GUI.JDateTextPane" binding="tpWednesday2">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="20ffc" class="GUI.JDateTextPane" binding="tpWednesday3">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="c8882" class="GUI.JDateTextPane" binding="tpWednesday4">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="10b18" class="GUI.JDateTextPane" binding="tpWednesday5">
+        <constraints>
+          <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="cbda1" class="GUI.JDateTextPane" binding="tpThursday1">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="4" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="f242f" class="GUI.JDateTextPane" binding="tpThursday2">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="1102a" class="GUI.JDateTextPane" binding="tpThursday3">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="b303a" class="GUI.JDateTextPane" binding="tpThursday4">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="cefd8" class="GUI.JDateTextPane" binding="tpThursday5">
+        <constraints>
+          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="fbc77" class="GUI.JDateTextPane" binding="tpFriday1">
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="5fca5" class="GUI.JDateTextPane" binding="tpSaturday1">
+        <constraints>
+          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="e9154" class="GUI.JDateTextPane" binding="tpFriday2">
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="c7668" class="GUI.JDateTextPane" binding="tpSaturday2">
+        <constraints>
+          <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="8c475" class="GUI.JDateTextPane" binding="tpFriday3">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="e6bde" class="GUI.JDateTextPane" binding="tpSaturday3">
+        <constraints>
+          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="2e982" class="GUI.JDateTextPane" binding="tpFriday4">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="d5fec" class="GUI.JDateTextPane" binding="tpSaturday4">
+        <constraints>
+          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="b7fbe" class="GUI.JDateTextPane" binding="tpFriday5">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="bd0aa" class="GUI.JDateTextPane" binding="tpSaturday5">
+        <constraints>
+          <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <hspacer id="2c36a">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="10" height="-1"/>
+            <preferred-size width="10" height="-1"/>
+            <maximum-size width="10" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="808f5">
+        <constraints>
+          <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="10" height="-1"/>
+            <preferred-size width="10" height="-1"/>
+            <maximum-size width="10" height="-1"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="738d3" class="javax.swing.JButton" binding="btnSwitchView">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="change the way the calendar is displayed."/>
+        </properties>
+      </component>
+      <component id="68ee5" class="javax.swing.JButton" binding="btnMinusTime">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="50" height="-1"/>
+            <preferred-size width="50" height="-1"/>
+            <maximum-size width="50" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="&lt;"/>
+        </properties>
+      </component>
+      <component id="88ad1" class="javax.swing.JButton" binding="btnPlusTime">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="50" height="-1"/>
+            <preferred-size width="50" height="-1"/>
+            <maximum-size width="50" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="&gt;"/>
+        </properties>
+      </component>
+      <component id="886a3" class="GUI.JDateTextPane" binding="tpMonday5">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="5c8e0" class="GUI.JDateTextPane" binding="tpSunday6">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="5d287" class="GUI.JDateTextPane" binding="tpMonday6">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="5adb5" class="GUI.JDateTextPane" binding="tpTuesday6">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="c2f0f" class="GUI.JDateTextPane" binding="tpWednesday6">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="5540e" class="GUI.JDateTextPane" binding="tpThursday6">
+        <constraints>
+          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="fbc74" class="GUI.JDateTextPane" binding="tpFriday6">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+      <component id="fd6ad" class="GUI.JDateTextPane" binding="tpSaturday6">
+        <constraints>
+          <grid row="8" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="140" height="130"/>
+            <preferred-size width="140" height="130"/>
+            <maximum-size width="140" height="130"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Click to view events."/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
